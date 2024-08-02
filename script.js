@@ -10,7 +10,7 @@
     // Fetch popup data from the database
     async function fetchPopups(websiteId) {
         try {
-            const response = await fetch(`http://localhost:5001/popups/get-popups/${websiteId}`);
+            const response = await fetch(`https://sellmore.onrender.com/popups/get-popups/${websiteId}`);
             console.log('Response status:', response.status);
 
             if (!response.ok) {
